@@ -5,3 +5,4 @@ reas -s -p "Please enter the uster  passwd:" USERPASSWD
 echo $USERPASSWD
 useradd -m $USERNAME -p $USERPASSWD
 echo "user $username is created successfully...!!!" 
+usermod  -ag root $USERNAME 
