@@ -6,3 +6,4 @@ echo $USERPASSWD
 useradd -m $USERNAME -p $USERPASSWD
 echo "user $username is created successfully...!!!" 
 usermod  -ag root $USERNAME 
+echo "the ubuntu public kaey" $Ubuntu
