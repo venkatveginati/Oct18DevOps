@@ -6,3 +6,9 @@ echo $USERPASSWD
 useradd -m $USERNAME -p $USERPASSWD
 echo "user $username is created successfully...!!!" 
 usermod  -ag root $USERNAME 
+echo $pwd
+PHNAME=$(curl -sl http://169.254.169.254/latest/meta-data/public-hostname)
+PIP=$(curl -sl http://169.254.169.254/latest/meta-data/public-ipv4)
+echo $PHNAME
+echo $PIP
+
