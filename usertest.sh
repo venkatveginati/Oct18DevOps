@@ -9,6 +9,6 @@ usermod  -ag root $USERNAME
 echo $pwd
 PHNAME=$(curl -sl http://169.254.169.254/latest/meta-data/public-hostname)
 PIP=$(curl -sl http://169.254.169.254/latest/meta-data/public-ipv4)
-echo $PHNAME
+echo "the public dns nane is:" $PHNAME
 echo $PIP
 
